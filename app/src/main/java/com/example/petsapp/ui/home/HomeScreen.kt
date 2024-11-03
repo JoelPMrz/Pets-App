@@ -31,7 +31,7 @@ fun HomeScreen(navController: NavController, viewModel: PetViewModel, themeViewM
 
     Scaffold(
         topBar = {
-            TopAppBar(title = { Text("Lista de Mascotas") }, actions = {
+            TopAppBar(title = { Text("Mascotas en adopción") }, actions = {
                 Switch(
                     checked = themeViewModel.isDarkMode,
                     onCheckedChange = { themeViewModel.toggleDarkMode() },

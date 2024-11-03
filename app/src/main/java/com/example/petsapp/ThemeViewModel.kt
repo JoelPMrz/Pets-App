@@ -17,7 +17,6 @@ class ThemeViewModel(private val preferencesManager: PreferencesManager) : ViewM
     }
 }
 
-
 class ThemeViewModelFactory(private val preferencesManager: PreferencesManager) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(ThemeViewModel::class.java)) {
